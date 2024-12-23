@@ -20,6 +20,7 @@
             padding: 40px 20px;
             color: #2c3e50;
             line-height: 1.8;
+            position: relative;
         }
 
         .container {
@@ -226,6 +227,27 @@
             font-size: 1.2rem;
         }
 
+        .whatsapp-banner {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1rem;
+            font-weight: 500;
+            z-index: 1000;
+        }
+
+        .whatsapp-banner i {
+            font-size: 1.5rem;
+        }
+
         @media (max-width: 768px) {
             body {
                 padding: 20px 15px;
@@ -251,6 +273,17 @@
             .bio-content {
                 padding: 1.8rem;
             }
+
+            .whatsapp-banner {
+                bottom: 10px;
+                right: 10px;
+                padding: 8px 16px;
+                font-size: 0.9rem;
+            }
+
+            .whatsapp-banner i {
+                font-size: 1.2rem;
+            }
         }
     </style>
 </head>
@@ -258,7 +291,7 @@
     <div class="container">
         <section>
             <div class="header-section">
-                <h1>KBPencil</h1>
+                <h1>KB Pencil</h1>
                 <div class="sub-header">by Kakoli Bose</div>
                 <div class="profile-pic">
                     <img src="kb.jpeg" alt="Kakoli Bose">
@@ -307,6 +340,10 @@
             </div>
         </section>
     </div>
+    <a href="https://wa.link/2zie4l" target="_blank" class="whatsapp-banner">
+        <i class="fab fa-whatsapp"></i>
+        <span>Contact on WhatsApp</span>
+    </a>
     <script>
         document.querySelectorAll('.tab').forEach(tab => {
             tab.addEventListener('click', () => {
