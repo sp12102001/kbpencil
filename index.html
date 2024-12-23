@@ -4,99 +4,143 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KBPencil - Art by Kakoli Bose</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* Basic style resets and typography */
         *, *::before, *::after {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
+
         body {
             font-family: 'Roboto', sans-serif;
             font-size: 16px;
             line-height: 1.8;
-            color: #333;
-            background-color: #f0ece2;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
+            min-height: 100vh;
             padding: 40px 20px;
         }
-        h1 {
-            font-family: 'Lora', serif;
-            font-size: 3rem;
-            color: #4a4a4a;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        p {
-            margin-bottom: 20px;
-            color: #555;
-            text-align: center;
-            padding: 0 20px;
-        }
-        a {
-            text-decoration: none;
-            color: #7d9d9c;
-            font-weight: bold;
-        }
-        a:hover, a:focus {
-            color: #576f72;
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
         }
 
-        /* Layout and container styling */
         section {
-            max-width: 960px;
-            margin: auto;
-            padding: 3rem;
-            background-color: #ffffff;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            background-color: rgba(255, 255, 255, 0.98);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            padding: 4rem;
+            backdrop-filter: blur(10px);
         }
+
+        h1 {
+            font-family: 'Lora', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            font-family: 'Lora', serif;
+            font-size: 1.25rem;
+            color: #7d9d9c;
+            text-align: center;
+            margin-bottom: 3rem;
+            font-style: italic;
+        }
+
         .intro {
-            font-size: 1.2rem;
-            margin-bottom: 2.5rem;
+            max-width: 800px;
+            margin: 0 auto 3.5rem;
         }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.9;
+            color: #546e7a;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
         .links {
             list-style: none;
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            margin-top: 30px;
+            gap: 1.5rem;
+            margin-top: 2.5rem;
         }
-        .links li {
-            margin: 0.75rem;
-        }
-             .links a {
-            display: inline-block;
-            padding: 14px 28px;
+
+        .links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 16px 32px;
             background-color: #7d9d9c;
             color: #ffffff;
             border-radius: 50px;
-            transition: background-color 0.3s, transform 0.3s;
+            transition: all 0.3s ease;
             font-size: 1.1rem;
-            text-align: center;
-            min-width: 200px;
-            margin-bottom: 1rem;
+            font-weight: 500;
+            min-width: 220px;
+            text-decoration: none;
         }
+
         .links a:hover {
             background-color: #576f72;
             transform: translateY(-3px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
         }
-    </style>
+
+        .links i {
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 768px) {
+            section {
+                padding: 2.5rem 1.5rem;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .links {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .links a {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
     </style>
 </head>
 <body>
-    <section>
-        <h1>KBPencil by Kakoli Bose</h1>
-        <div class="intro">
-            <p>Kakoli Bose, a self-taught Mandala artist, evolved from traditional oil painting to creating therapeutic Mandala designs inspired by Carl Jung. Her work promotes tranquility and self-connection.</p>
-            <p>Acknowledged for her distinct style, Kakoli has won the Instagram Mandala Challenge in 2021 and 2022. Explore her art that not only captivates but also inspires healing.</p>
-        </div>
-        <ul class="links">
-            <li><a href="https://www.instagram.com/kbpencil/" target="_blank">View on Instagram</a></li>
-            <li><a href="https://wa.link/2zie4l" target="_blank">WhatsApp Contact</a></li>
-            <li><a href="mailto:contact@kbpencil.com" target="_blank">Email Kakoli</a></li>
-        </ul>
-    </section>
+    <div class="container">
+        <section>
+            <h1>KBPencil</h1>
+            <div class="subtitle">Mandala Art by Kakoli Bose</div>
+
+            <div class="intro">
+                <p>Kakoli Bose, a self-taught Mandala artist, evolved from traditional oil painting to creating therapeutic Mandala designs inspired by Carl Jung. Her work promotes tranquility and self-connection.</p>
+                <p>Acknowledged for her distinct style, Kakoli has won the Instagram Mandala Challenge in 2021 and 2022. Explore her art that not only captivates but also inspires healing.</p>
+            </div>
+
+            <ul class="links">
+                <li><a href="https://www.instagram.com/kbpencil/" target="_blank"><i class="fab fa-instagram"></i>View on Instagram</a></li>
+                <li><a href="https://wa.link/2zie4l" target="_blank"><i class="fab fa-whatsapp"></i>WhatsApp Contact</a></li>
+                <li><a href="mailto:contact@kbpencil.com"><i class="far fa-envelope"></i>Email Kakoli</a></li>
+            </ul>
+        </section>
+    </div>
 </body>
 </html>
